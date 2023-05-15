@@ -23,7 +23,13 @@ class ArticleRoutes < Sinatra::Base
   end
 
   get('/:id') do
-    
+    summary = @articleCtrl.get_article(params['id'])
+
+    if (summary[:ok])
+      { 'article' => summary[:data] }.to_json
+    else
+      { msg: 'Could not get article.' }.to_json
+    end
   end
 
   post('/') do
