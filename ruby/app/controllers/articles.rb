@@ -38,12 +38,12 @@ class ArticleController
   end
 
   def delete_article(id)
-    delete_count = Article.delete(:id => id)
+    delete_count = Article.delete(id)
 
-    if delete_count == 0
-      { ok: false }
-    else
+    if delete_count > 0
       { ok: true, delete_count: delete_count }
+    else
+      { ok: false }
     end
   rescue StandardError
     { ok: false }

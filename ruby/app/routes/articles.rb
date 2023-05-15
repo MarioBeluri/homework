@@ -16,7 +16,7 @@ class ArticleRoutes < Sinatra::Base
     summary = @articleCtrl.get_batch
 
     if summary[:ok]
-      { articles => summary[:data] }.to_json
+      { 'articles' => summary[:data] }.to_json
     else
       { msg: 'Could not get articles.' }.to_json
     end
@@ -49,8 +49,7 @@ class ArticleRoutes < Sinatra::Base
   end
 
   delete('/:id') do
-    summary = @articleCtrl.delete_article params['id']
-
+    summary = @articleCtrl.delete_article(params['id'])
     if summary[:ok]
       { msg: 'Article deleted' }.to_json
     else
