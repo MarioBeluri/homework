@@ -29,7 +29,13 @@ case $1 in
       2>> $LOG_DIR/rubyweb.stderr.log
     ;;
 
-  *)
+  stop)
+    kill -9 `cat $PIDFILE`
+    rm -f $PIDFILE
+
+    ;;
+
+  *)    
     echo "Usage: ctl {start|stop}"
 
 esac

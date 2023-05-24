@@ -4,7 +4,7 @@ port = <%=
 
 port = p("port")
 
-if port < 1024 or port > 4000
+if port < 1024 || port > 4000
   raise "Invalid port number"
 end
 

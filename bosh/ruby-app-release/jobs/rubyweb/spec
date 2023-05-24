@@ -2,11 +2,12 @@
 name: rubyweb
 
 templates:
-  ctl.ebr: tmp/ctl
-  config.ebr: tmp/config.yml
+  ctl.erb: bin/ctl
+  config.erb: bin/config.yml
 
 packages:
-- ruby
+- ruby-web-app
+- ruby-2.7
 
 properties:
   port:
