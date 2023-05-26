@@ -3,10 +3,9 @@ name: rubyweb
 
 templates:
   ctl.erb: bin/ctl
-  config.erb: bin/config.yml
+  config.erb: cfg/config.yml
 
 packages:
-- ruby-web-app
 - ruby-2.7
 
 properties:

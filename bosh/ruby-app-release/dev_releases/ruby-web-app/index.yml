@@ -1,6 +1,12 @@
 builds:
+  09bb4068-306a-4470-773a-231be6b2ca54:
+    version: 0+dev.4
   4fea6f65-bfb7-4d39-4257-00bb24544366:
     version: 0+dev.2
+  57aa8693-09e8-4d17-6d13-25d05a7f6249:
+    version: 0+dev.3
   9261df8b-324a-408f-40bc-8f68cc9056f5:
     version: 0+dev.1
+  d278482e-f7a2-4779-4107-bfebfcd300c9:
+    version: 0+dev.5
 format-version: "2"

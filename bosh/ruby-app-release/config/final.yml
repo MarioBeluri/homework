@@ -1,4 +1,4 @@
-name: ruby-web-app
+name: rubyweb
 blobstore:
   provider: local
   options:
