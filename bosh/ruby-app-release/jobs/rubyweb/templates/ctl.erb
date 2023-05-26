@@ -28,14 +28,11 @@ case $1 in
 
     %>
     bundle exec ruby <%= start_file if start_file.eql? "app.rb" %> \
-
       >>  $LOG_DIR/rubyweb.stdout.log \
       2>> $LOG_DIR/rubyweb.stderr.log
     ;;
-    
   stop)
     kill -9 `cat $PIDFILE`
-    rm -f $PIDFILE
     ;;
 
   *)
