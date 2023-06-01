@@ -1,5 +1,6 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 ruby '3.2.2'
+source 'https://rubygems.org'
 
 group :development, :test do
   gem 'bosh-template'
@@ -7,4 +8,4 @@ group :development, :test do
   gem 'rspec-its'
 end
 
-gem 'yaml', '~> 0.2.0'
+gem "yaml", "~> 0.2.1"
